@@ -1,0 +1,8 @@
+#!/bin/bash
+# Get the C file name from the environment variable
+CFILE="$CFILE"
+# Generate the assembly code
+gcc -S -masm=intel "$CFILE"
+# Rename the output file with the .s extension
+mv "${CFILE%.c}.s" "${CFILE%.c}.s"
+
