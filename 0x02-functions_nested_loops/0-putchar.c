@@ -1,8 +1,4 @@
 #include "main.h"
-/**
-*main - netry point 
-*return : always
-*/
 int main(void)
 {
 _putchar('_');
